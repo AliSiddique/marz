@@ -11,6 +11,8 @@
 		CC18C1D429D9A9AC002097EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18C1D329D9A9AC002097EF /* ContentView.swift */; };
 		CC18C1D629D9A9AD002097EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC18C1D529D9A9AD002097EF /* Assets.xcassets */; };
 		CC18C1D929D9A9AD002097EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC18C1D829D9A9AD002097EF /* Preview Assets.xcassets */; };
+		CC18C1E129D9AD83002097EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18C1E029D9AD83002097EF /* HomeView.swift */; };
+		CC18C1E429D9AE20002097EF /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18C1E329D9AE20002097EF /* SignupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		CC18C1D329D9A9AC002097EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CC18C1D529D9A9AD002097EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC18C1D829D9A9AD002097EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CC18C1E029D9AD83002097EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CC18C1E329D9AE20002097EF /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		CC18C1D029D9A9AC002097EF /* marzi */ = {
 			isa = PBXGroup;
 			children = (
+				CC18C1DF29D9AD71002097EF /* views */,
 				CC18C1D129D9A9AC002097EF /* marziApp.swift */,
 				CC18C1D329D9A9AC002097EF /* ContentView.swift */,
 				CC18C1D529D9A9AD002097EF /* Assets.xcassets */,
@@ -65,6 +70,23 @@
 				CC18C1D829D9A9AD002097EF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC18C1DF29D9AD71002097EF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				CC18C1E229D9AE0E002097EF /* Account */,
+				CC18C1E029D9AD83002097EF /* HomeView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		CC18C1E229D9AE0E002097EF /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				CC18C1E329D9AE20002097EF /* SignupView.swift */,
+			);
+			path = Account;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC18C1E429D9AE20002097EF /* SignupView.swift in Sources */,
+				CC18C1E129D9AD83002097EF /* HomeView.swift in Sources */,
 				CC18C1D429D9A9AC002097EF /* ContentView.swift in Sources */,
 				CC18C1D229D9A9AC002097EF /* marziApp.swift in Sources */,
 			);
