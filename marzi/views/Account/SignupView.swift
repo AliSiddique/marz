@@ -6,11 +6,10 @@
 //
 
 import SwiftUI
-
 struct SignupView: View {
     @State var email:String = ""
     @State var password:String = ""
-
+    @StateObject var certificatesVM = CertificatesViewModel()
     var body: some View {
         ZStack {
             Image("Image10")
@@ -18,12 +17,25 @@ struct SignupView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Text("Cosmic")
-                    .foregroundColor(.white)
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding()
-                
+                ForEach(certificatesVM.certificates,id:\.id){
+                    certificate in
+                    
+                    Text(certificate.instructor)
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                        .frame(height: 48)
+                        .padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 6))
+                    AsyncImage(url: URL(string:certificate.logo)) { image in
+                        image.resizable()
+                            .mask(Circle())
+                    } placeholder: {
+                        Circle()
+                            .redacted(reason: certificate.logo == nil ? .placeholder : [])
+
+                    }
+                    .frame(width: 100, height: 100)
+
+                }
                 Spacer()
                 TextField("Email",text:$email)
                 .frame(height: 48)
@@ -33,7 +45,7 @@ struct SignupView: View {
             .padding()
             .foregroundColor(.white)
                 
-                TextField("Password", text: $password)
+                SecureField("Password", text: $password)
                     .frame(height: 48)
                     .padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 6))
                      .background(.ultraThinMaterial)

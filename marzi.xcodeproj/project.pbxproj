@@ -13,6 +13,13 @@
 		CC18C1D929D9A9AD002097EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC18C1D829D9A9AD002097EF /* Preview Assets.xcassets */; };
 		CC18C1E129D9AD83002097EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18C1E029D9AD83002097EF /* HomeView.swift */; };
 		CC18C1E429D9AE20002097EF /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC18C1E329D9AE20002097EF /* SignupView.swift */; };
+		CCDFB10F29D9E67900C1C17F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CCDFB10E29D9E67900C1C17F /* FirebaseAnalytics */; };
+		CCDFB11129D9E67900C1C17F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CCDFB11029D9E67900C1C17F /* FirebaseAuth */; };
+		CCDFB11329D9E67900C1C17F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CCDFB11229D9E67900C1C17F /* FirebaseFirestore */; };
+		CCDFB11529D9E67900C1C17F /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = CCDFB11429D9E67900C1C17F /* FirebaseMessaging */; };
+		CCFE6A4129DB344E00C5F833 /* Certificates.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE6A4029DB344D00C5F833 /* Certificates.swift */; };
+		CCFE6A4329DB34B200C5F833 /* CertificatesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFE6A4229DB34B200C5F833 /* CertificatesViewModel.swift */; };
+		CCFE6A4729DB42D200C5F833 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CCFE6A4629DB42D100C5F833 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +30,11 @@
 		CC18C1D829D9A9AD002097EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC18C1E029D9AD83002097EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		CC18C1E329D9AE20002097EF /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		CC3C0A3C29DDA9470024D833 /* marzi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = marzi.entitlements; sourceTree = "<group>"; };
+		CCFE6A4029DB344D00C5F833 /* Certificates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Certificates.swift; sourceTree = "<group>"; };
+		CCFE6A4229DB34B200C5F833 /* CertificatesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificatesViewModel.swift; sourceTree = "<group>"; };
+		CCFE6A4629DB42D100C5F833 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CCFE6A4829DB43F700C5F833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +42,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCDFB11529D9E67900C1C17F /* FirebaseMessaging in Frameworks */,
+				CCDFB10F29D9E67900C1C17F /* FirebaseAnalytics in Frameworks */,
+				CCDFB11129D9E67900C1C17F /* FirebaseAuth in Frameworks */,
+				CCDFB11329D9E67900C1C17F /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +55,7 @@
 		CC18C1C529D9A9AC002097EF = {
 			isa = PBXGroup;
 			children = (
+				CCFE6A4629DB42D100C5F833 /* GoogleService-Info.plist */,
 				CC18C1D029D9A9AC002097EF /* marzi */,
 				CC18C1CF29D9A9AC002097EF /* Products */,
 			);
@@ -55,6 +72,10 @@
 		CC18C1D029D9A9AC002097EF /* marzi */ = {
 			isa = PBXGroup;
 			children = (
+				CC3C0A3C29DDA9470024D833 /* marzi.entitlements */,
+				CCFE6A4829DB43F700C5F833 /* Info.plist */,
+				CCFE6A3F29DB342700C5F833 /* Models */,
+				CCFE6A3E29DB340500C5F833 /* ViewModel */,
 				CC18C1DF29D9AD71002097EF /* views */,
 				CC18C1D129D9A9AC002097EF /* marziApp.swift */,
 				CC18C1D329D9A9AC002097EF /* ContentView.swift */,
@@ -75,8 +96,8 @@
 		CC18C1DF29D9AD71002097EF /* views */ = {
 			isa = PBXGroup;
 			children = (
+				CCFE6A4529DB354F00C5F833 /* Public */,
 				CC18C1E229D9AE0E002097EF /* Account */,
-				CC18C1E029D9AD83002097EF /* HomeView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -87,6 +108,30 @@
 				CC18C1E329D9AE20002097EF /* SignupView.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		CCFE6A3E29DB340500C5F833 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CCFE6A4229DB34B200C5F833 /* CertificatesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CCFE6A3F29DB342700C5F833 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CCFE6A4029DB344D00C5F833 /* Certificates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CCFE6A4529DB354F00C5F833 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				CC18C1E029D9AD83002097EF /* HomeView.swift */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +150,12 @@
 			dependencies = (
 			);
 			name = marzi;
+			packageProductDependencies = (
+				CCDFB10E29D9E67900C1C17F /* FirebaseAnalytics */,
+				CCDFB11029D9E67900C1C17F /* FirebaseAuth */,
+				CCDFB11229D9E67900C1C17F /* FirebaseFirestore */,
+				CCDFB11429D9E67900C1C17F /* FirebaseMessaging */,
+			);
 			productName = marzi;
 			productReference = CC18C1CE29D9A9AC002097EF /* marzi.app */;
 			productType = "com.apple.product-type.application";
@@ -133,6 +184,9 @@
 				Base,
 			);
 			mainGroup = CC18C1C529D9A9AC002097EF;
+			packageReferences = (
+				CCDFB10D29D9E67900C1C17F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = CC18C1CF29D9A9AC002097EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +203,7 @@
 			files = (
 				CC18C1D929D9A9AD002097EF /* Preview Assets.xcassets in Resources */,
 				CC18C1D629D9A9AD002097EF /* Assets.xcassets in Resources */,
+				CCFE6A4729DB42D200C5F833 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFE6A4329DB34B200C5F833 /* CertificatesViewModel.swift in Sources */,
 				CC18C1E429D9AE20002097EF /* SignupView.swift in Sources */,
+				CCFE6A4129DB344E00C5F833 /* Certificates.swift in Sources */,
 				CC18C1E129D9AD83002097EF /* HomeView.swift in Sources */,
 				CC18C1D429D9A9AC002097EF /* ContentView.swift in Sources */,
 				CC18C1D229D9A9AC002097EF /* marziApp.swift in Sources */,
@@ -288,12 +345,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = marzi/marzi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"marzi/Preview Content\"";
+				DEVELOPMENT_TEAM = P5AHP6SL3X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = marzi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -316,12 +375,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = marzi/marzi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"marzi/Preview Content\"";
+				DEVELOPMENT_TEAM = P5AHP6SL3X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = marzi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -361,6 +422,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCDFB10D29D9E67900C1C17F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CCDFB10E29D9E67900C1C17F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCDFB10D29D9E67900C1C17F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CCDFB11029D9E67900C1C17F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCDFB10D29D9E67900C1C17F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		CCDFB11229D9E67900C1C17F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCDFB10D29D9E67900C1C17F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CCDFB11429D9E67900C1C17F /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCDFB10D29D9E67900C1C17F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC18C1C629D9A9AC002097EF /* Project object */;
 }

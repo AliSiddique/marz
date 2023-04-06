@@ -12,14 +12,14 @@ struct HomeView: View {
         TabView {
             ContentView()
                 .tabItem {
-                    Label("Menu", systemImage: "list.dash")
+                    Label("Menu", systemImage: "house")
                 }
             SignupView()
                 .tabItem {
                     Label("Home", systemImage: "person")
                 }
         }
-        .background(.ultraThinMaterial)
+        .background(.blue)
     }
 }
 
